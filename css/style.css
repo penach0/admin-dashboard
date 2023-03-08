@@ -1,3 +1,17 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Blocks */
+
 body {
     margin: 0;
     height: 100vh;
@@ -9,6 +23,7 @@ body {
 
 .sidebar {
     grid-area: 1/1/-1/2;
+    padding: 25px;
 
     background-color: hsla(0, 100%, 50%, 0.5);
 }
@@ -19,4 +34,16 @@ body {
 
 .main {
     background-color: hsla(120, 100%, 25%, 0.5);
+}
+
+/* Elements */
+
+.sidebar__nav {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 50px;
+}
+
+.sidebar__logo > * {
+    margin: 0;
 }
