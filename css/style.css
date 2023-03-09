@@ -29,7 +29,22 @@ body {
 }
 
 .header {
+    display: grid;
+    padding: 20px 60px;
+
+
     background-color: hsla(240, 100%, 50%, 0.5);
+}
+
+.search-bar {
+    display: inline-grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.personal-links {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-items: center;
 }
 
 .main {
@@ -47,3 +62,18 @@ body {
 .sidebar__logo > * {
     margin: 0;
 }
+
+.header__utilities {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+}
+
+.search-bar__input {
+    grid-column: 2/3;
+}
+
+.search-bar__btn {
+    grid-column: 1/2;
+}
+
