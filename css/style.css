@@ -30,6 +30,7 @@ body {
 
 .header {
     display: grid;
+    gap: 50px;
     padding: 20px 60px;
 
 
@@ -45,6 +46,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-items: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
 .main {
@@ -77,3 +83,23 @@ body {
     grid-column: 1/2;
 }
 
+.nav > * {
+    align-content: center;
+}
+
+.nav__user-info {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    justify-self: start;
+}
+
+.nav__buttons {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    justify-self: end;
+}
+
+.nav__user-text > * {
+    margin: 0;
+}
