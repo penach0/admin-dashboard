@@ -16,6 +16,10 @@ a:active {
     text-decoration: none;
 }
 
+.icon {
+    height: 25px;
+}
+
 /* Variables */
 
 :root {
@@ -112,16 +116,15 @@ body {
     font-weight: 700;
 }
 
-.sidebar__nav .sidebar__icon {
+.sidebar__nav .icon {
     height: 25px;
-    width: auto;;
 }
 
 .sidebar__logo a {
     gap: 5px;
 }
 
-.sidebar__logo .sidebar__icon{
+.sidebar__logo .icon{
         height: 50px;
         width: auto;
 }
