@@ -10,6 +10,18 @@ ul {
     margin: 0;
 }
 
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+
+/* Variables */
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+}
+
 /* Typography */
 
 h1,
@@ -83,8 +95,35 @@ body {
     gap: 50px;
 }
 
-.sidebar__logo > * {
-    margin: 0;
+.sidebar ul {
+    margin-left: 8px;
+}
+
+.sidebar li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.sidebar__nav a {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.sidebar__nav .sidebar__icon {
+    height: 25px;
+    width: auto;;
+}
+
+.sidebar__logo a {
+    gap: 5px;
+}
+
+.sidebar__logo .sidebar__icon{
+        height: 50px;
+        width: auto;
 }
 
 .header__utilities {
