@@ -136,7 +136,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content auto;
-    gap: 24px;
+    column-gap: 24px;
     padding: 30px;
 
     background-color: var(--color-light-gray);
@@ -245,9 +245,8 @@ body {
     margin: 0;
 }
 
-.main__title,
-.main__title {
-    grid-row: 1/2;
+.main__title{
+    margin-bottom: 16px;
 }
 
 .main__projects {
