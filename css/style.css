@@ -36,19 +36,19 @@ a:active {
 }
 
 .icon {
-    height: 25px;
-    width: 25px; /*needed because width collapses on grid, would like to get rid of it */
+    height: 1.5rem;
+    width: 1.5rem; /*needed because width collapses on grid, would like to get rid of it */
     vertical-align: middle;
 }
 
 .icon--large {
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
 }
 
 .icon--xlarge {
-    height: 70px;
-    width: 70px;
+    height: 4.4rem;
+    width: 4.4rem;
 }
 
 button {
@@ -64,7 +64,7 @@ button {
     --color-light-blue: hsl(201, 79%, 46%);
     --color-light-gray: hsl(214, 32%, 91%);
     --color-text-p-main: hsl(0, 0%, 39%);
-    --box-shadow: 3px 5px 5px 1px hsl(217, 15%, 83%);
+    --box-shadow: 0.2rem 0.3rem 1rem 0.1rem hsl(217, 15%, 83%);
 }
 
 /* Typography */
@@ -92,7 +92,7 @@ body {
 
 .sidebar {
     grid-area: 1/1/-1/2;
-    padding: 25px;
+    padding: 1.5rem;
 
     background-color: var(--color-light-blue);
     font-weight: 700;
@@ -101,8 +101,8 @@ body {
 
 .header {
     display: grid;
-    gap: 30px;
-    padding: 20px 60px;
+    gap: 1.8rem;
+    padding: 1.25rem 3.75rem;
 
 
     background-color: white;
@@ -115,7 +115,7 @@ body {
     display: inline-grid;
     grid-template-columns: min-content auto;
     align-content: center;
-    gap: 16px;
+    gap: 1rem;
 }
 
 .personal-links {
@@ -123,8 +123,7 @@ body {
     grid-template-columns: repeat(3, max-content);
     align-items: center;
     justify-content: end;
-    gap: 30px;
-
+    gap: 1.8rem;
 }
 
 .nav {
@@ -136,8 +135,8 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content auto;
-    column-gap: 24px;
-    padding: 30px;
+    column-gap: 1.5rem;
+    padding: 1.8rem;
 
     background-color: var(--color-light-gray);
 }
@@ -145,8 +144,8 @@ body {
 .card {
     display: grid;
     grid-template-rows: auto min-content;
-    padding: 35px;
-    border-radius: 10px;
+    padding: 2.2rem;
+    border-radius: 0.6rem;
 
     background: linear-gradient(
         to right,
@@ -162,38 +161,38 @@ body {
     position: fixed;
     display: grid;
     grid-template-rows: auto;
-    gap: 50px;
+    gap: 3rem;
 }
 
 .sidebar ul {
-    margin-left: 8px;
+    margin-left: 0.5rem;
 }
 
 .sidebar li:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 0.6rem;
 }
 
 .sidebar__nav a {
     display: inline-flex;
     align-items: center;
-    gap: 20px;
+    gap: 1.25rem;
 
     color: white;
 }
 
 .sidebar__logo a {
-    gap: 5px;
+    gap: 0.5rem;
 }
 
 .sidebar__logo .icon{
-        height: 50px;
+        height: 3.125rem;
         width: auto;
 }
 
 .header__utilities {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 80px;
+    gap: 5rem;
 }
 
 .search-bar__input {
@@ -201,8 +200,8 @@ body {
 
     background-color: var(--color-light-gray);
     border: none;
-    border-radius: 30px;
-    padding-left: 12px;
+    border-radius: 1.8rem;
+    padding-left: 0.75rem;
 }
 
 .search-bar__btn {
@@ -220,20 +219,20 @@ body {
 .nav__user-info {
     display: grid;
     grid-template-columns: min-content auto;
-    gap: 25px;
+    gap: 1.5rem;
     justify-self: start;
 }
 
 .nav__buttons {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+    gap: 1.5rem;
     justify-self: end;
 }
 
 .nav button {
-    border-radius: 30px;
-    padding: 10px 30px;
+    border-radius: 2rem;
+    padding: 0.6rem 1.6rem;
 
     color: white;
     background-color: var(--color-light-blue);
@@ -246,25 +245,25 @@ body {
 }
 
 .main__title{
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 .main__projects {
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 1.5rem;
 }
 
 .main__sidebar {
     grid-row: 2/3;
     display: grid;
     grid-template-rows: auto 1fr;
-    gap: 40px;
+    gap: 2.5rem;
 }
 
 .main ul {
-    border-radius: 12px;
+    border-radius: 0.75rem;
 
     background-color: white;
     box-shadow: var(--box-shadow);
@@ -275,28 +274,28 @@ body {
 }
 
 .main__announcements ul {
-    padding-inline: 30px;
+    padding-inline: 1.8rem;
 }
 
 .main__announcements li {
-    padding: 20px 0;
+    padding: 1.25rem 0;
 }
 
 .main__announcements li:not(:last-child){
-    border-bottom:1.5px solid hsl(0, 0%, 87%);
+    border-bottom:0.01rem solid hsl(0, 0%, 87%);
 }
 
 .main__trending ul {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .main__trending li {
-    padding: 15px 0;
+    padding: 1rem 0;
 }
 
 .main__trending a {
     display: flex;
-    gap: 16px;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -307,5 +306,5 @@ body {
 .card__buttons {
     justify-self: end;
     display: flex;
-    gap: 24px;
+    gap: 1.5rem;
 }
