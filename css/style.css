@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2'),
+         url('/fonts/roboto-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: bold;
+
+}
+
 /* General Styles */
 
 * {
@@ -52,7 +70,8 @@ button {
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
     margin: 0;
 }
 
@@ -60,11 +79,13 @@ h4 {
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100dvh;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
+
+    font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
 .sidebar {
