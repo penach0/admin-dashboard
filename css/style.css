@@ -51,7 +51,8 @@ button {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
 }
 
@@ -119,9 +120,11 @@ body {
 .card {
     display: grid;
     grid-template-rows: auto min-content;
-    padding: 40px;
+    padding: 35px;
+    border-radius: 20px;
 
-    border: 1px solid green;
+    background-color: var(--color-white);
+    border-left: 10px solid hsl(42, 87%, 55%);
 }
 
 /* Elements */
