@@ -84,7 +84,7 @@ body {
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 
     font-family: 'roboto', Arial, Helvetica, sans-serif;
@@ -93,6 +93,7 @@ body {
 .sidebar {
     grid-area: 1/1/-1/2;
     padding: 1.5rem;
+    z-index: 2;
 
     background-color: var(--color-light-blue);
     font-weight: 700;
