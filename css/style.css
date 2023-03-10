@@ -69,6 +69,8 @@ body {
     padding: 25px;
 
     background-color: hsla(0, 100%, 50%, 0.5);
+    font-weight: 700;
+
 }
 
 .header {
@@ -78,6 +80,7 @@ body {
 
 
     background-color: hsla(240, 100%, 50%, 0.5);
+    font-weight: 700;
 }
 
 .search-bar {
@@ -137,7 +140,6 @@ body {
     gap: 20px;
 
     color: var(--color-white);
-    font-weight: 700;
 }
 
 .sidebar__logo a {
@@ -171,7 +173,6 @@ body {
 
 .personal-links > .name {
     color: black;
-    font-weight: 700;
 }
 
 .nav > * {
@@ -188,14 +189,21 @@ body {
 .nav__buttons {
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 24px;
     justify-self: end;
+}
+
+.nav button {
+    color: var(--color-white);
+    background-color: lightblue;
+
+    border-radius: 30px;
+    padding: 10px 30px;
+
 }
 
 .nav__user-text > * {
     margin: 0;
-
-    font-weight: 700;
 }
 
 .main__title,
