@@ -277,6 +277,10 @@ body {
     padding: 20px 0;
 }
 
+.main__trending a{
+    display: flex;
+}
+
 .card__buttons {
     justify-self: end;
     display: flex;
