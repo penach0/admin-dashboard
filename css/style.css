@@ -32,6 +32,7 @@ a,
 a:visited,
 a:active {
     text-decoration: none;
+    color: black;
 }
 
 .icon {
@@ -41,8 +42,8 @@ a:active {
 }
 
 .icon--large {
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
 }
 
 .icon--xlarge {
@@ -79,7 +80,7 @@ p {
 
 body {
     margin: 0;
-    height: 100dvh;
+    height: 100vh;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -259,7 +260,6 @@ body {
 }
 
 .main ul {
-    padding: 20px;
     border-radius: 12px;
 
     background-color: white;
@@ -269,16 +269,30 @@ body {
     color: var(--color-text-p-main);
 }
 
+.main__announcements ul {
+    padding-inline: 30px;
+}
+
+.main__announcements li {
+    padding: 20px 0;
+}
+
 .main__announcements li:not(:last-child){
     border-bottom:1.5px solid hsl(0, 0%, 87%);
 }
 
-.main li {
-    padding: 20px 0;
+.main__trending ul {
+    padding: 20px;
+}
+
+.main__trending li {
+    padding: 15px 0;
 }
 
 .main__trending a{
     display: flex;
+    gap: 16px;
+    align-items: center;
 }
 
 .card__buttons {
