@@ -224,7 +224,7 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px
+    gap: 24px;
 }
 
 .main__sidebar {
@@ -239,8 +239,12 @@ body {
     padding: 20px;
 }
 
+.main p {
+    color: grey;
+}
+
 .main__announcements li:not(:last-child){
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid hsl(0, 0%, 87%);
 }
 
 .card__buttons {
