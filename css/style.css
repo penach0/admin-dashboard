@@ -117,12 +117,17 @@ body {
 }
 
 .card {
+    display: grid;
+    grid-template-rows: auto min-content;
+    padding: 40px;
+
     border: 1px solid green;
 }
 
 /* Elements */
 
 .sidebar__nav {
+    position: fixed;
     display: grid;
     grid-template-rows: auto;
     gap: 50px;
@@ -233,4 +238,10 @@ body {
 
 .main__announcements li:not(:last-child){
     border-bottom: 1px solid gray;
+}
+
+.card__buttons {
+    justify-self: end;
+    display: flex;
+    gap: 24px;
 }
