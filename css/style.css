@@ -18,6 +18,23 @@ a:active {
 
 .icon {
     height: 25px;
+    width: 25px; /*needed because width collapses on grid, would like to get rid of it */
+    vertical-align: middle;
+}
+
+.icon--large {
+    height: 40px;
+    width: 40px;
+}
+
+.icon--xlarge {
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
 }
 
 /* Variables */
@@ -63,13 +80,18 @@ body {
 
 .search-bar {
     display: inline-grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: min-content auto;
+    align-content: center;
+    gap: 20px;
 }
 
 .personal-links {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    justify-items: center;
+    grid-template-columns: repeat(3, max-content);
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+
 }
 
 .nav {
@@ -112,12 +134,8 @@ body {
     align-items: center;
     gap: 20px;
 
-    color: hsl(0, 0%, 100%);
+    color: var(--color-white);
     font-weight: 700;
-}
-
-.sidebar__nav .icon {
-    height: 25px;
 }
 
 .sidebar__logo a {
@@ -137,10 +155,21 @@ body {
 
 .search-bar__input {
     grid-column: 2/3;
+
+    background-color: lightgrey;
+    border: none;
+    border-radius: 30px;
 }
 
 .search-bar__btn {
     grid-column: 1/2;
+
+    padding: 3px;
+}
+
+.personal-links > .name {
+    color: black;
+    font-weight: 700;
 }
 
 .nav > * {
