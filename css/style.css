@@ -42,7 +42,6 @@ button {
 /* Variables */
 
 :root {
-    --color-white: hsl(0, 0%, 100%);
     --color-light-blue: hsl(201, 79%, 46%);
     --color-light-gray: hsl(214, 32%, 91%);
     --color-text-p-main: hsl(0, 0%, 39%);
@@ -83,7 +82,7 @@ body {
     padding: 20px 60px;
 
 
-    background-color: var(--color-white);
+    background-color: white;
     font-weight: 700;
 }
 
@@ -112,7 +111,7 @@ body {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: min-content auto;
-    gap: 10px;
+    gap: 24px;
     padding: 30px;
 
     background-color: var(--color-light-gray);
@@ -122,10 +121,13 @@ body {
     display: grid;
     grid-template-rows: auto min-content;
     padding: 35px;
-    border-radius: 20px;
+    border-radius: 10px;
 
-    background-color: var(--color-white);
-    border-left: 10px solid hsl(42, 87%, 55%);
+    background: linear-gradient(
+        to right,
+        hsl(42, 87%, 55%) 3% ,
+        white 3%
+    );
 }
 
 /* Elements */
@@ -150,7 +152,7 @@ body {
     align-items: center;
     gap: 20px;
 
-    color: var(--color-white);
+    color: white;
 }
 
 .sidebar__logo a {
@@ -206,7 +208,7 @@ body {
     border-radius: 30px;
     padding: 10px 30px;
 
-    color: var(--color-white);
+    color: white;
     background-color: var(--color-light-blue);
 
     font-weight: 700;
@@ -239,7 +241,7 @@ body {
     padding: 20px;
     border-radius: 12px;
 
-    background-color: var(--color-white);
+    background-color: white;
 }
 
 .main p {
