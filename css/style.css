@@ -18,6 +18,10 @@
 
 /* General Styles */
 
+html {
+    overscroll-behavior: none;
+}
+
 * {
     box-sizing: border-box;
 }
